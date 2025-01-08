@@ -39,7 +39,7 @@ const AdminDashboard = () => {
   const { allUsersCount, subscribedUsersCount } = useSelector(
     (state) => state.stat
   );
-  const { allPayments, finalMonths, monthlySalesRecord } = useSelector(
+  const { allPayments, monthlySalesRecord } = useSelector(
     (state) => state.razorpay
   );
 
