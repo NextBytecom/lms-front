@@ -7,7 +7,7 @@ import { forgetPassword } from "../../Redux/authSlice";
 
 const ForgetPassword = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
 
@@ -22,13 +22,13 @@ const ForgetPassword = () => {
     }
 
     // email validation using regex
-    if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+    if (!email.match(`/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/`)) {
       toast.error("Invalid email id");
       return;
     }
 
     // calling the api from auth slice
-    const res = await dispatch(forgetPassword(email));
+    // const res = await dispatch(forgetPassword(email));
 
     // clearing the input fields
     setEmail("");
