@@ -47,7 +47,7 @@ const ResetPassword = () => {
     }
 
     // calling the api to reset password
-    // const res = await dispatch(resetPassword(data));
+    const res = await dispatch(resetPassword(data));
 
     // redirecting to the login page
     if (res.payload.success) {
