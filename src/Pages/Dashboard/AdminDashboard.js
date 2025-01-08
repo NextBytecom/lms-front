@@ -104,7 +104,7 @@ const AdminDashboard = () => {
       await dispatch(getStatsData());
       await dispatch(getPaymentRecord());
     })();
-  }, []);
+  }, [dispatch]);
 
   return (
     <Layout>
