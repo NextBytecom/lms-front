@@ -27,7 +27,7 @@ const Contact = () => {
 
     // email validation using regex
     if (
-      !userInput.email.match(/^\w+([\.-]?\w+)*@[\w\.-]+\.\w{2,3}$/)
+      !userInput.email.match('')
     ) {
       toast.error("Invalid email id");
       return;
